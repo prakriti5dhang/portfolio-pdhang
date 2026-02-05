@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0" version="29.3.7">
+  <diagram name="Page-1" id="wsih5J5TS9wtMD1IkYuI">
+    <mxGraphModel dx="864" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="74uoI2iAEhvxtPJs34a--1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F9F7ED;strokeColor=none;labelBackgroundColor=light-dark(#FFFFFF,#FFFFFF);" value="" vertex="1">
+          <mxGeometry height="320" width="400" x="200" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="74uoI2iAEhvxtPJs34a--3" parent="1" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.logic_gates.logic_gate;operation=and;strokeColor=#00994D;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="30" width="60" x="265" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="74uoI2iAEhvxtPJs34a--4" parent="1" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.logic_gates.buffer2;fillColor=#1A1A1A;strokeColor=#000099;" value="" vertex="1">
+          <mxGeometry height="30" width="50" x="270" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="74uoI2iAEhvxtPJs34a--5" parent="1" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.logic_gates.rs_latch;strokeColor=#994C00;" value="" vertex="1">
+          <mxGeometry height="40" width="50" x="480" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="74uoI2iAEhvxtPJs34a--6" parent="1" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.resistors.resistor_2;fillColor=#006633;" value="" vertex="1">
+          <mxGeometry height="10" width="70" x="390" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="74uoI2iAEhvxtPJs34a--7" parent="1" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.resistors.resistor_1;strokeColor=#99004D;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="10" width="90" x="395" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="74uoI2iAEhvxtPJs34a--8" parent="1" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.capacitors.capacitor_3;fillColor=#0000CC;strokeColor=#99004D;" value="" vertex="1">
+          <mxGeometry height="30" width="55" x="460" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="74uoI2iAEhvxtPJs34a--9" parent="1" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.inductors.transformer_2;strokeColor=#4C0099;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="310" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="74uoI2iAEhvxtPJs34a--10" parent="1" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.electrical.signal_sources.current_source;strokeColor=#4C0099;" value="" vertex="1">
+          <mxGeometry height="40" width="30" x="330" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="74uoI2iAEhvxtPJs34a--11" parent="1" style="pointerEvents=1;fillColor=strokeColor;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.diodes.schottky_diode;" value="" vertex="1">
+          <mxGeometry height="30" width="60" x="380" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="74uoI2iAEhvxtPJs34a--12" parent="1" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.signal_sources.source;aspect=fixed;points=[[0.5,0,0],[1,0.5,0],[0.5,1,0],[0,0.5,0]];elSignalType=ac;fillColor=none;strokeColor=#004C99;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="350" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="74uoI2iAEhvxtPJs34a--13" parent="1" style="verticalLabelPosition=bottom;sketch=0;html=1;fillColor=#006633;strokeColor=none;verticalAlign=top;pointerEvents=1;align=center;shape=mxgraph.cisco_safe.iot_things_icons.icon15;" value="" vertex="1">
+          <mxGeometry height="20" width="30" x="425" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="74uoI2iAEhvxtPJs34a--14" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#D45B07;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.braket_embedded_simulator;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="472.5" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="74uoI2iAEhvxtPJs34a--15" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#3F8624;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.iot_thing_relay;" value="" vertex="1">
+          <mxGeometry height="35" width="35" x="370" y="217.5" as="geometry" />
+        </mxCell>
+        <mxCell id="74uoI2iAEhvxtPJs34a--16" parent="1" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.logic_gates.logic_gate;operation=or;strokeColor=#0000CC;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="30" width="45" x="515" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="74uoI2iAEhvxtPJs34a--17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=30;strokeColor=none;fillColor=none;fontStyle=0;fontFamily=Comic Sans MS;" value="Digital Electronics Circuits" vertex="1">
+          <mxGeometry height="90" width="280" x="260" y="260" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

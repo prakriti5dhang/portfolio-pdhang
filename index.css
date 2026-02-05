@@ -1,0 +1,316 @@
+/* ---------- Root Theme ---------- */
+:root {
+    --bg: #f5f7fa;
+    --text: #111;
+    --card: #fff;
+    --accent: #ff9800;
+}
+
+body.dark {
+    --bg: #0f172a;
+    --text: #fff;
+    --card: #1e293b;
+}
+
+body {
+    margin: 0;
+    font-family: Segoe UI, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    padding: 70px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* ---------- Navbar ---------- */
+header {
+    background: #0f172a;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Dark toggle */
+.theme-toggle {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* ---------- Hero ---------- */
+#hero {
+    background: linear-gradient(120deg, #1e3c72, #2a5298);
+    color: #fff;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* ---------- Skills ---------- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.skill {
+    background: var(--card);
+    padding: 18px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+/* Project Tools */
+.projtools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    
+
+}
+
+.projtool {
+    background: var(--card);
+    padding: 18px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* MSt tools */
+.MStools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+   
+}
+
+.MStool {
+    background: var(--card);
+    padding: 18px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Content development */
+.cnttools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+   
+}
+
+.cnttool {
+    background: var(--card);
+    padding: 18px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Tools */
+.otools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    
+}
+
+.otool {
+    background: var(--card);
+    padding: 18px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h3, h4, h5, p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* ---------- Timeline ---------- */
+.timeline {
+    border-left: 3px solid var(--accent);
+    padding-left: 20px;
+}
+
+.timeline-item {
+    margin-bottom: 25px;
+}
+
+/* Education / For left-right heading row */
+.edu-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.edu-row h4{
+  margin:0;
+}
+
+.edu-row h5{
+  margin:0;
+  font-weight:normal;
+  color:rgb(10, 10, 10);
+}
+
+/* ---------- Projects ---------- */
+.filter-btns {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter-btns button {
+    margin: 5px;
+    padding: 8px 16px;
+    border: none;
+    background: var(--accent);
+    color: #fff;
+    cursor: pointer;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: var(--card);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    padding: 15px;
+    color: #0f172a;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+/* ---------- Modal ---------- */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .7);
+}
+
+.modal-content {
+    background: #fff;
+    padding: 25px;
+    max-width: 500px;
+    margin: 10% auto;
+    border-radius: 10px;
+}
+
+/* ---------- Contact ---------- */
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background: #00040c;
+    color: #fff;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* ---------- Mobile ---------- */
+@media(max-width:768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #0f172a;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        padding: 20px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
