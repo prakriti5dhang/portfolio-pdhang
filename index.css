@@ -1,6 +1,6 @@
 /* ---------- Root Theme ---------- */
 :root {
-    --bg: #f5f7fa;
+    --bg: #d7e7ff;
     --text: #111;
     --card: #fff;
     --accent: #ff9800;
@@ -15,7 +15,7 @@ body.dark {
 body {
     margin: 0;
     font-family: Segoe UI, sans-serif;
-    background: var(--bg);
+    background: aliceblue;/*var(--bg);*/
     color: var(--text);
     scroll-behavior: smooth;
 }
@@ -30,6 +30,10 @@ section {
     padding: 70px 0;
 }
 
+#headername a{
+    color: #fff;
+    text-decoration: none;
+}
 h2 {
     text-align: center;
     margin-bottom: 40px;
@@ -56,6 +60,7 @@ header {
     list-style: none;
     display: flex;
     gap: 25px;
+    margin-left: auto;
 }
 
 .nav-links a {
@@ -94,6 +99,7 @@ header {
 }
 
 /* ---------- Skills ---------- */
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -180,11 +186,19 @@ header {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-h3, h4, h5, p{
+h3, h4, h5,h6, p{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 
+#viewpaperbtn a{
+    color:#00040c;
+    text-decoration: none;
+}
 
+.icon {
+    font-size: 32px; /* increase size */
+  }
 /* ---------- Timeline ---------- */
 .timeline {
     border-left: 3px solid var(--accent);
@@ -231,7 +245,7 @@ h3, h4, h5, p{
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    gap: 25px;
+    gap: 30px;
 }
 
 .project-card {
@@ -244,7 +258,7 @@ h3, h4, h5, p{
 .project-card img {
     width: 100%;
     height: 150px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .project-card h3 {
@@ -294,8 +308,45 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 20px 0;
 }
 
+
+
 /* ---------- Mobile ---------- */
-@media(max-width:768px) {
+/* @media(max-width:768px){
+  .nav-links{
+    display:none;
+    flex-direction:column;
+    background:#0f172a;
+    position:absolute;
+    top:60px;
+    right:0;
+    width:220px;
+    padding:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+    border-radius:0 0 0 10px;
+  }
+
+  .nav-links li{
+    margin:10px 0;
+  }
+
+  .nav-links.show{
+    display:flex;
+  }
+
+  .menu-toggle{
+    display:block;
+    color:#fff;
+    font-size:26px;
+    cursor:pointer;
+  }
+}
+ */
+
+
+
+
+
+ @media(max-width:768px) {
     .nav-links {
         display: none;
         flex-direction: column;
@@ -313,4 +364,5 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     .menu-toggle {
         display: block;
     }
-}
+}  
+

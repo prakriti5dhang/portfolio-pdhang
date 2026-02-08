@@ -1,10 +1,15 @@
 /* Mobile Menu */
-document.querySelector(".menu-toggle").onclick=()=>
-  document.querySelector(".nav-links").classList.toggle("show");
+document.addEventListener("DOMContentLoaded", function () {
+  const menuBtn = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
 
-/* Dark Mode */
-document.querySelector(".theme-toggle").onclick=()=>
-  document.body.classList.toggle("dark");
+  if (menuBtn) {
+    menuBtn.addEventListener("click", function () {
+      navLinks.classList.toggle("show");
+    });
+  }
+});
+
 
 /* Modal */
 const cards=document.querySelectorAll(".project-card");

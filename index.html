@@ -26,7 +26,8 @@
     <!-- Navbar -->
     <header>
         <div class="container navbar">
-            <div><b><span class="mdi mdi-home-account"></span>Prakriti Dhang</b></div>
+            <div id="headername"><b><a href="#hero"><span class="mdi mdi-home-account fa-2x"></span>Prakriti
+                        Dhang</b></a></div>
 
             <ul class="nav-links">
                 <li><a href="#about"><span class="mdi mdi-account"></span><span>About</span></a></li>
@@ -34,22 +35,24 @@
                 <li><a href="#education"><span class="mdi mdi-school"></span>Education</a></li>
                 <li><a href="#skills"><span class="mdi mdi-chart-box-outline"></span>Skills</a></li>
                 <li><a href="#projects"><span class="mdi mdi-file-multiple"></span>Projects</a></li>
+                <li><a href="#publications"><span class="fa-solid fa-book"></span>Publications</a></li>
                 <li><a href="#contact"><span class="mdi mdi-email"></span>Contact</a></li>
             </ul>
 
-            <!-- <div>
-    <i class="fas fa-moon theme-toggle"></i>
-    <span class="menu-toggle">☰</span>
-  </div> -->
+            <div>
+
+                <span class="menu-toggle">☰</span>
+            </div>
         </div>
     </header>
 
     <!-- Hero -->
     <section id="hero">
         <h1>Prakriti Dhang</h1>
-        <h3>Frontend & UX Developer</h3>
-        <p>Interactive Simulations • Virtual Labs • Pedagogy Design • Instructional Design • Human Computer Interaction
-        </p>
+        <!-- <h3>Frontend & UX Developer</h3> -->
+        <h6>Instructional Design • Pedagogy Design • UX/UI Developer • Frontent Developer • Interactive Simulations •
+            Virtual Labs • Human Computer Interaction
+        </h6>
         <!-- <a href="resume.pdf" class="btn" download>Download Resume</a> -->
     </section>
 
@@ -59,16 +62,15 @@
             <h2>About Me</h2>
             <p>
                 A skilled frontend and UI/UX-focused developer with over five years of experience in designing and
-                developing interactive simulation-based virtual labs and e-learning
-                platforms. Skilled in identifying and prioritising research needs,
+                developing interactive simulation-based virtual labs and e-learning platforms. Skilled in identifying
+                and prioritising research needs,
                 managing end-to-end research initiatives, and collaborating closely with cross-functional teams
                 including
-                Design, Product, Marketing, Experimentation, and Strategy. Proficient in applying human-centred
-                design (HCD) and instructional design principles from ideation through to evaluation to uncover customer
-                needs.
-                Skilled in translating complex and advanced technical concepts into clear, accessible, user-friendly and
-                actionable
-                insights that inform decision-making, and evaluate product experiences.
+                Design, Product, Marketing, Experimentation, and Strategy. Proficient in applying human-centred design
+                (HCD) and instructional design principles from ideation through to evaluation to uncover customer
+                needs. Skilled in translating complex and advanced technical concepts into clear, accessible,
+                user-friendly and
+                actionable insights that inform decision-making, and evaluate product experiences.
             </p>
         </div>
     </section>
@@ -127,7 +129,42 @@
 
                     </ul>
                 </div>
+                <div class="timeline-item">
+                    <div class="edu-row">
+                        <h4>Housing Representative (Resident Assistant) </h4>
+                        <h5>Aug 2019- Dec 2020</h5>
+                    </div>
+                    <p>Malmö University, Malmö, Sweden </p>
+                    <ul>
+                        <li> Event organizer and event planner.
 
+                        </li>
+
+
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <div class="edu-row">
+                        <h4>Teaching Assistant </h4>
+                        <h5>Oct 2018- June 2019</h5>
+                    </div>
+                    <p>Malmö University, Malmö, Sweden </p>
+                    <ul>
+                        <li> Assisting students in the labs, evaluation of assignments, and grading.
+                            <ul>
+                                <li style="list-style-type: none;">Courses:
+                                    <ul>
+                                        <li>Programming with C#</li>
+                                        <li>Information Security</li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -144,8 +181,9 @@
                         <h4>Master of Science in Computer Science</h4>
                         <h5>2018 - 2020</h5>
                     </div>
-                    <h5>Malmö University, Malmö, Sweden</h5>
-                    <p>An usability study on Smart Assistants (SAs) focusing on their application for workplace meeting
+                    <h6>Malmö University, Malmö, Sweden</h6>
+                    <p>Thesis: An usability study on Smart Assistants (SAs) focusing on their application for workplace
+                        meeting
                         scheduling was conducted. A questionnaire was further designed to gather feedback on face
                         recognition and speech interfaces, focusing on privacy and security concerns. The study provided
                         guidelines for developing socially interactive, speech-based SAs and highlighted strategies to
@@ -159,8 +197,8 @@
                         <h4> Bachelor of Technology in Information Technology</h4>
                         <h5> 2011 - 2015</h5>
                     </div>
-                    <p>Neotia Institute of Technology Management and Science, Kolkata, India</p>
-                    <p></p>
+                    <h6>Neotia Institute of Technology Management and Science, Kolkata, India</h6>
+                    <p>Thesis: Automatic Speaker Recognition</p>
                 </div>
 
             </div>
@@ -255,53 +293,177 @@
         </div>
     </section>
 
+    <!-- projects
+<section id="projects" class="section scrollspy">
+      <h3 class="page-title white-text teal">Projects</h3>
+      <div class="container">
+        <div class="row">
+
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="music streaming app" src="/assets/img/project-music-player.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Music Player Web-App<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A music streaming web app based on Django
+                </p>
+              </div>
+              <div class="card-reveal">
+               
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, AWS S3, Heroku</li>
+                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
+                  <li>Search and filter songs based on language and singer.</li>
+                  <li>Create multiple playlists and add/remove songs to/from playlist.</li>
+                  <li>Scroll through recently played/viewed songs.</li>
+
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://galvanic-music.herokuapp.com/" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/music-player"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+</div>
+</div>
+</section> -->
+
+
     <!-- Projects -->
+    <!-- <section id="projects">
+        <div class="container">
+            <div class="row gap-2">
+                <div class="col-md-12">
+                    <h2>Projects</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="project-card border border-1" data-category="web" data-title="Software Engineering Lab"
+                    data-desc="Interactive SE simulations.">
+                    <a href="https://se-iitkgp.vlabs.ac.in/" target="_blank"><img class="card-img-top border border-1" src="./image/scte-icon.png"></a>
+                    <div class="card-body">
+                        <div class="card-title">
+                    <h4>Software Engineering </h4>
+                    </div>
+                    </div>
+                </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="project-card border border-1" data-category="ux" data-title="Experimental Biochemistry"
+                    data-desc="Interactive simulations.">
+                    <a href="http://vlabs.iitkgp.ac.in/biochem/" target="_blank"><img class="card-img-top border border-1"
+                            src="./image/biochem-icond.png"></a>
+                            <div class="card-body">
+                        <div class="card-title">
+                    <h4>Experimental Biochemistry</h4>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-3">
+                     <div class="project-card border border-1" data-category="web" data-title="Digital Electronics Circuits"
+                    data-desc="Interactive DCE simulations.">
+                    <a href="https://dec-iitkgp.vlabs.ac.in/" target="_blank"><img class="card-img-top border border-1" src="./image/dec-icon.png"></a>
+                    <div class="card-body">
+                        <div class="card-title">
+                    <h4>Digital Electronics Circuits </h4>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-3">
+                     <div class="project-card border border-1" data-category="web" data-title="Mining Engineering"
+                    data-desc="Interactive ME simulations.">
+                    <a href="https://mv-iitkgp.vlabs.ac.in/" target="_blank"><img class="card-img-top border border-1" src="./image/mv_icon.png"></a>
+                   <div class="card-body">
+                        <div class="card-title"> <h4>Mine Automation and Virtual Reality</h4>
+                            </div>
+                            </div>
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+ <div class="project-card border border-1" data-category="web" data-title="Plant Metabollic Engineering"
+                    data-desc="Interactive PME simulations.">
+                    <a href="" target="_blank"><img class="card-img-top border border-1" src="./image/"></a>
+                    <div class="card-body">
+                        <div class="card-title">
+                    <h4>Plant Metabollic Engineering (Under development)</h4></div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-3">
+                     <div class="project-card border border-1" data-category="web" data-title="Science and Maths"
+                    data-desc="Interactive simulations.">
+                    <a href="https://prakriti5dhang.github.io/scmevsg-projects" target="_blank"><img class="card-img-top border border-1" src="./image/"></a>
+                  <div class="card-body">
+                        <div class="card-title">
+                    <h4>Science, Maths, and Environmental Science</h4>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+            </div>
+            </section> -->
+    <!---->
+
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
-
-            <!-- <div class="filter-btns">
-<button onclick="filterProjects('all')">All</button>
-<button onclick="filterProjects('web')">Web</button>
-<button onclick="filterProjects('ux')">UX</button>
-</div> -->
-
             <div class="projects-grid">
 
                 <div class="project-card" data-category="web" data-title="Software Engineering Lab"
                     data-desc="Interactive SE simulations.">
                     <a href="https://se-iitkgp.vlabs.ac.in/" target="_blank"><img src="./image/scte-icon.png"></a>
-                    <h3>Software Engineering </h3>
+                    <h4>Software Engineering </h4>
                 </div>
 
                 <div class="project-card" data-category="ux" data-title="Experimental Biochemistry"
                     data-desc="Interactive simulations.">
                     <a href="http://vlabs.iitkgp.ac.in/biochem/" target="_blank"><img
-                            src="./image/biochem-icondrawio.png"></a>
-                    <h3>Experimental Biochemistry</h3>
+                            src="./image/biochem-icond.png"></a>
+                    <h4>Experimental Biochemistry</h4>
                 </div>
 
                 <div class="project-card" data-category="web" data-title="Mining Engineering"
                     data-desc="Interactive ME simulations.">
                     <a href="https://mv-iitkgp.vlabs.ac.in/" target="_blank"><img src="./image/mv_icon.png"></a>
-                    <h3>Mine Automation and Virtual Reality</h3>
+                    <h4>Mine Automation and Virtual Reality</h4>
                 </div>
 
                 <div class="project-card" data-category="web" data-title="Digital Electronics Circuits"
                     data-desc="Interactive DCE simulations.">
                     <a href="https://dec-iitkgp.vlabs.ac.in/" target="_blank"><img src="./image/dec-icon.png"></a>
-                    <h3>Digital Electronics Circuits </h3>
+                    <h4>Digital Electronics Circuits </h4>
                 </div>
                 <div class="project-card" data-category="web" data-title="Plant Metabollic Engineering"
                     data-desc="Interactive PME simulations.">
                     <a href="" target="_blank"><img src="./image/"></a>
-                    <h3>Plant Metabollic Engineering (Under development)</h3>
+                    <h4>Plant Metabollic Engineering (Under development)</h4>
                 </div>
 
                 <div class="project-card" data-category="web" data-title="Science and Maths"
                     data-desc="Interactive simulations.">
                     <a href="https://prakriti5dhang.github.io/scmevsg-projects" target="_blank"><img src="./image/"></a>
-                    <h3>Science, Maths, and Environmental Science</h3>
+                    <h4>Science, Maths, and Environmental Science</h4>
                 </div>
 
             </div>
@@ -315,26 +477,25 @@
             <div class="projects-grid">
 
                 <div class="project-card">
-                    <!-- <img src="https://picsum.photos/400/200?research1" alt="Publication"> -->
-                    <h3>A Web-Based Experimental Biochemistry Virtual Laboratory for Science and Engineering Education
-                    </h3>
+                    <h4>A Web-Based Experimental Biochemistry Virtual Laboratory for Science and Engineering Education
+                    </h4>
                     <p style="padding:0 15px 15px;">
                         Conference paper - 10th International Conference on Business and Industrial Research (ICBIR),
                         Bangkok, Thailand, 2025
                     </p>
-                    <a href="https://ieeexplore.ieee.org/document/11163023" class="btn" target="_blank"
-                        style="margin:15px;display:inline-block;">View Paper</a>
+                    <button class="btn btn-warning" id="viewpaperbtn"><a
+                            href="https://ieeexplore.ieee.org/document/11163023" target="_blank">View Paper</a></button>
                 </div>
 
                 <div class="project-card">
-                    <!-- <img src="https://picsum.photos/400/200?research2" alt="Publication"> -->
-                    <h3>Interaction with Smart
-                        Assistant</h3>
+
+                    <h4>Interaction with Smart Assistant</h4>
                     <p style="padding:0 15px 15px;">
                         Published in Malmö University Electronic Publication, Malmö, Sweden, 2020
                     </p>
-                    <a href="https://mau.diva-portal.org/smash/get/diva2:1480210/FULLTEXT01.pdf" class="btn"
-                        target="_blank" style="margin:15px;display:inline-block;">View Paper</a>
+                    <button class="btn btn-warning" id="viewpaperbtn"> <a
+                            href="https://mau.diva-portal.org/smash/get/diva2:1480210/FULLTEXT01.pdf"
+                            target="_blank">View Paper</a></button>
                 </div>
 
             </div>
@@ -355,24 +516,33 @@
             <h2>Contact</h2>
             <div class="d-flex align-items-center gap-2">
                 <!-- Image -->
-                    <img src="" class="img-fluid rounded-circle"><i class="fa fa-phone"></i>
-                    <h4 class="mb-0">+61 468890146</h4>
+                <img src="" class="img-fluid rounded-circle"><i class="mdi mdi-phone icon"></i>
+                <h4 class="mb-0">+61 468890146</h4>
             </div>
             <div class="d-flex align-items-center gap-2">
                 <!-- Image -->
-                <img src="" class="img-fluid rounded-circle"><i class="mdi mdi-email"></i>
+                <img src="" class="img-fluid rounded-circle"><i class="mdi mdi-email icon"></i>
                 <h4 class="mb-0"><a aria-label="Email prakriti" href="mailto:dhang.prakriti@gmail.com"
                         class="hoverline">dhang.prakriti@gmail.com</a></h4>
             </div>
             <div class="d-flex align-items-center gap-2">
                 <!-- Image -->
-                
-                    <img src="" class="img-fluid rounded-circle"><i class="mdi mdi-linkedin"></i>
-            
-                    <h4 class="mb-0"><a aria-label="prakriti on LinkedIn"
-                            href="https://www.linkedin.com/in/prakriti-dhang-01600913b/" class="hoverline"
-                            target="_blank">linkedin.com/in/prakriti-dhang</a></h4>
-               
+
+                <img src="" class="img-fluid rounded-circle"><i class="mdi mdi-linkedin icon"></i>
+
+                <h4 class="mb-0"><a aria-label="prakriti on LinkedIn"
+                        href="https://www.linkedin.com/in/prakriti-dhang-01600913b/" class="hoverline"
+                        target="_blank">linkedin.com/in/prakriti-dhang</a></h4>
+
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <!-- Image -->
+                <img src="" class="img-fluid rounded-circle"><i class="mdi mdi-account-school-outline icon"></i>
+
+                <h4 class="mb-0"><a aria-label="prakriti on googlescholar"
+                        href="https://scholar.google.com/citations?user=--UqrrEAAAAJ&hl=en" class="hoverline"
+                        target="_blank">Google Scholar</a></h4>
+
             </div>
         </div>
 
@@ -400,14 +570,14 @@
         </div>
     </section>
 
-    <footer>
+    <!-- <footer>
         <p>Melbourne, Australia</p>
         <p><i class="mdi mdi-email"></i> <a href="mailto:dhang.prakriti@email.com">dhang.prakriti@gmail.com</a></p>
         <p><i class="mdi mdi-linkedin"></i> <a href="https://www.linkedin.com/in/prakriti-dhang-01600913b/"
                 target="_blank">LinkedIn</a></p>
         <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/nature_and_art_walkway/"
                 target="_blank">Instagram</a></p>
-    </footer>
+    </footer> -->
 
     <!-- JS -->
     <!-- jQuery-->
