@@ -28,12 +28,18 @@ body {
 
 section {
     padding: 70px 0;
+    
 }
 
 #headername a{
     color: #fff;
     text-decoration: none;
+    font-size: medium;
 }
+
+
+
+
 h2 {
     text-align: center;
     margin-bottom: 40px;
@@ -66,6 +72,17 @@ header {
 .nav-links a {
     color: #fff;
     text-decoration: none;
+    /* font-size: medium; */
+    display: inline-block;
+    /* required */
+    transition: transform .3s ease, color .3s ease;
+    
+}
+
+.nav-links a:hover {
+    color: #f8f7f7;
+    text-decoration: none;
+     transform: scale(1.15);
 }
 
 .menu-toggle {
@@ -243,7 +260,7 @@ h3, h4, h5,h6, p{
 }
 
 .icon {
-    font-size: 32px; /* increase size */
+    font-size: 30px; /* increase size */
   }
 /* ---------- Timeline ---------- */
 .timeline {

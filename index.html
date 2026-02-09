@@ -26,17 +26,17 @@
     <!-- Navbar -->
     <header>
         <div class="container navbar">
-            <div id="headername"><b><a href="#hero"><i class="mdi mdi-home-account fa-2x"></i> <span>Prakriti
+            <div id="headername"><b><a href="#hero"><i class="mdi mdi-home-account mdi-24px"></i> <span>Prakriti
                         Dhang</span></b></a></div>
 
-            <ul class="nav-links">
-                <li><a aria-label="Navigate to the About section" href="#about"><i class="mdi mdi-account"></i> <span>About</span></a></li>
-                <li><a href="#experience"><i class="mdi mdi-trending-up"></i> <span>Experience</span></a></li>
-                <li><a href="#education"><i class="mdi mdi-school"></i> <span>Education</span></a></li>
-                <li><a href="#skills"><i class="mdi mdi-chart-box-outline"></i> <span>Skills</span></a></li>
-                <li><a href="#projects"><i class="mdi mdi-file-multiple"></i> <span>Projects</span></a></li>
-                <li><a href="#publications"><i class="fa-solid fa-book"></i> <span>Publications</span></a></li>
-                <li><a href="#contact"><i class="mdi mdi-email"></i> <span>Contact</span></a></li>
+            <ul class="nav-links" id="headermenu">
+                <li><a aria-label="Navigate to the About section" href="#about"><i class="mdi mdi-account mdi-24px"></i> <span>About</span></a></li>
+                <li><a href="#experience"><i class="mdi mdi-trending-up mdi-24px"></i> <span>Experience</span></a></li>
+                <li><a href="#education"><i class="mdi mdi-school mdi-24px"></i> <span>Education</span></a></li>
+                <li><a href="#skills"><i class="mdi mdi-chart-box-outline mdi-24px"></i> <span>Skills</span></a></li>
+                <li><a href="#projects"><i class="mdi mdi-laptop mdi-24px"></i> <span>Projects</span></a></li> <!--mdi mdi-file-multiple-->
+                <li><a href="#publications"><i class="mdi mdi-file-multiple mdi-24px"></i> <span>Publications</span></a></li> <!-- fa-solid fa-book, mdi mdi-file-document-->
+                <li><a href="#contact"><i class="mdi mdi-email mdi-24px"></i> <span>Contact</span></a></li>
             </ul>
 
             <div>
@@ -65,6 +65,7 @@
         <div class="container">
             
             <h2>About Me</h2>
+            <hr>
             <p>
                 A skilled frontend and UI/UX-focused developer with over five years of experience in designing and
                 developing interactive simulation-based virtual labs and e-learning platforms. Skilled in identifying
@@ -106,13 +107,13 @@
     <section id="experience">
         <div class="container">
             <h2> Experience</h2>
-
+<hr>
             <div class="timeline">
 
                 <div class="timeline-item">
                     <div class="edu-row">
                         <h4>Project Scientist </h4>
-                        <h5>Nov 2022 - Nov, 2025</h5>
+                        <h5>Nov 2022 - Present </h5>
                     </div>
                     <p>Virtual Laboratory, Indian Institute of Technology (IIT) Kharagpur, India</p>
                     <ul>
@@ -210,7 +211,7 @@ Pedagogy Design, Education Technology, Qualitative and Quantitative analysis.</l
     <section id="education">
         <div class="container">
             <div class="container-fluid" ><h2> Education</h2></div>
-            
+            <hr>
 
             <div class="timeline">
 
@@ -293,6 +294,7 @@ Pedagogy Design, Education Technology, Qualitative and Quantitative analysis.</l
     <section id="skills">
         <div class="container">
             <h2>Skills</h2>
+            <hr>
             <h3>Programming Languages and Database</h3>
             <div class="skills-grid">
                 <div class="skill">HTML</div>
@@ -486,6 +488,7 @@ Pedagogy Design, Education Technology, Qualitative and Quantitative analysis.</l
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
+            <hr>
             <div class="projects-grid">
 
                 <div class="project-card" data-category="web" data-title="Software Engineering Lab"
@@ -531,7 +534,7 @@ Pedagogy Design, Education Technology, Qualitative and Quantitative analysis.</l
     <section id="publications">
         <div class="container">
             <h2>Publication</h2>
-
+<hr>
             <div class="publish-grid">
 
                 <div class="publish-card">
@@ -569,34 +572,40 @@ Pedagogy Design, Education Technology, Qualitative and Quantitative analysis.</l
     <section id="contact" >
         <div class="container">
             <h2>Contact</h2>
+            <hr>
+            <div class="d-flex align-items-center gap-2"> <!--class="d-flex align-items-center gap-2"-->
+                <!-- Image -->
+                <img src="" class="img-fluid rounded-circle"><i class="mdi mdi-map-marker icon"></i>
+                <h5 class="mb-0" style="color:rgb(36, 36, 36)">Melbourne, Australia</h5>
+            </div>
             <div class="d-flex align-items-center gap-2"> <!--class="d-flex align-items-center gap-2"-->
                 <!-- Image -->
                 <img src="" class="img-fluid rounded-circle"><i class="mdi mdi-phone icon"></i>
-                <h4 class="mb-0" style="color:rgb(36, 36, 36)">+61 468890146</h4>
+                <h5 class="mb-0" style="color:rgb(36, 36, 36)">+61 468890146</h5>
             </div>
             <div class="d-flex align-items-center gap-2">
                 <!-- Image -->
                 <img src="" class="img-fluid rounded-circle"><i class="mdi mdi-email icon"></i>
-                <h4 class="mb-0"><a aria-label="Email prakriti" href="mailto:dhang.prakriti@gmail.com"
-                        class="hoverline" style="text-decoration: none; color:rgb(36, 36, 36)">dhang.prakriti@gmail.com</a></h4>
+                <h5 class="mb-0"><a aria-label="Email prakriti" href="mailto:dhang.prakriti@gmail.com"
+                        class="hoverline" style="text-decoration: none; color:rgb(36, 36, 36)">dhang.prakriti@gmail.com</a></h5>
             </div>
             <div class="d-flex align-items-center gap-2">
                 <!-- Image -->
 
                 <img src="" class="img-fluid rounded-circle"><i class="mdi mdi-linkedin icon"></i>
 
-                <h4 class="mb-0"><a aria-label="prakriti on LinkedIn"
+                <h5 class="mb-0"><a aria-label="prakriti on LinkedIn"
                         href="https://www.linkedin.com/in/prakriti-dhang-01600913b/" class="hoverline"
-                        target="_blank" style="text-decoration: none; color:rgb(36, 36, 36)"">linkedin.com/in/prakriti-dhang</a></h4>
+                        target="_blank" style="text-decoration: none; color:rgb(36, 36, 36)">linkedin.com/in/prakriti-dhang</a></h5>
 
             </div>
             <div class="d-flex align-items-center gap-2">
                 <!-- Image -->
                 <img src="" class="img-fluid rounded-circle"><i class="mdi mdi-account-school-outline icon"></i>
 
-                <h4 class="mb-0"><a aria-label="prakriti on googlescholar"
+                <h5 class="mb-0"><a aria-label="prakriti on googlescholar"
                         href="https://scholar.google.com/citations?user=--UqrrEAAAAJ&hl=en" class="hoverline"
-                        target="_blank" style="text-decoration: none; color:rgb(36, 36, 36)"">Google Scholar</a></h4>
+                        target="_blank" style="text-decoration: none; color:rgb(36, 36, 36)">Google Scholar</a></h5>
 
             </div>
         </div>
@@ -626,10 +635,10 @@ Pedagogy Design, Education Technology, Qualitative and Quantitative analysis.</l
     </section>
 
     <footer>
-        <p>Melbourne, Australia</p>
+        <p><i class="mdi mdi-copyright"></i> 2026 Prakriti Dhang</p>
     
-        <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/nature_and_art_walkway/"
-                target="_blank">Instagram</a></p>
+        <!-- <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/nature_and_art_walkway/"
+                target="_blank">Instagram</a></p> -->
     </footer>
 
     <!-- JS -->
