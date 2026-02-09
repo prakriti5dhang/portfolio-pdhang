@@ -112,6 +112,7 @@ header {
   display: inline-block;
   border-radius: 5px;
   -webkit-border-radius: 5px;
+  text-decoration: none;
 }
 
 /* .readme:hover{
@@ -132,6 +133,7 @@ header {
   margin-top: 1.5em;
   border-radius: 5px;
   -webkit-border-radius: 5px;
+  text-decoration: none;
 }
 
 .contactme:hover{
@@ -139,6 +141,9 @@ header {
   background-color: white;
 }
 
+ul li{
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 /* ---------- Skills ---------- */
 
 .skills-grid {
