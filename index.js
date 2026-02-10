@@ -33,31 +33,62 @@ function filterProjects(cat){
   });
 }
 
+
+/****** Contact ******/
+
+
+   
+  // (function() {
+  //   emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+  // })();
+
+  // // Wait until DOM is fully loaded
+  // document.addEventListener("DOMContentLoaded", function() {
+  //   const form = document.getElementById("contact-form");
+  //   const status = document.getElementById("status");
+
+  //   form.addEventListener("submit", function(e) {
+  //     e.preventDefault(); // Prevent default form submission
+
+  //     emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form)
+  //       .then(() => {
+  //         status.innerHTML = "<span class='text-success'>Message sent successfully!</span>";
+  //         form.reset();
+  //       })
+  //       .catch((err) => {
+  //         status.innerHTML = "<span class='text-danger'>Failed to send message. Try again.</span>";
+  //         console.error("EmailJS error:", err);
+  //       });
+  //   });
+  // });
+
+
+
+
+
+
 /* Contact */
-function sendMsg(e){
-  e.preventDefault();
-  alert("Message sent! (Connect EmailJS to make it live)");
-}
+// function sendMsg(e){
+//   e.preventDefault();
+//   alert("Message sent! (Connect EmailJS to make it live)");
+// }
 
 
-function sendEmail(e) {
-  e.preventDefault();
+// function sendMail() {
+//   let name = document.getElementById("name").value;
+//   let email = document.getElementById("email").value;
+//   let message = document.getElementById("message").value;
 
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
+//   let subject = "Contact Form Message";
+//   let body =
+//     "Name: " + name + "%0D%0A" +
+//     "Email: " + email + "%0D%0A%0D%0A" +
+//     message;
 
-  const subject = encodeURIComponent(
-    "Portfolio Contact from " + name
-  );
+//   window.location.href =
+//     "mailto:dhang.prakriti@email.com?subject=" +
+//     encodeURIComponent(subject) +
+//     "&body=" +
+//     body;
+// }
 
-  const body = encodeURIComponent(
-    "Name: " + name + "\n" +
-    "Email: " + email + "\n\n" +
-    "Message:\n" + message
-  );
-
-  // 👉 Replace with your Gmail ID
-  window.location.href =
-    `mailto:dhang.prakriti@gmail.com?subject=${subject}&body=${body}`;
-}
