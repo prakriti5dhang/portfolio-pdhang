@@ -36,7 +36,42 @@ function filterProjects(cat){
 
 /****** Contact ******/
 
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("status");
+    const sheetURL = "https://script.google.com/macros/s/AKfycby116iTo8F52F7A5gIOQuSGeIWt79ZAreDHqG5eNk8VSrLgLBpOeCq0RWBCPwO9HdVx3Q/exec"; // Replace with your Google Apps Script Web App URL
 
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const formData = {
+        user_name: form.user_name.value,
+        user_email: form.user_email.value,
+        user_prof: form.user_prof.value,
+        user_orf: form.user_org.value,
+        message: form.message.value
+      };
+
+      fetch(sheetURL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
+      })
+      .then(response => response.json())
+      .then(data => {
+        if(data.status === 'success'){
+          status.innerHTML = "<span class='text-success'>Message sent successfully!</span>";
+          form.reset();
+        } else {
+          status.innerHTML = "<span class='text-danger'>Failed to send message.</span>";
+        }
+      })
+      .catch(err => {
+        console.error(err);
+        status.innerHTML = "<span class='text-danger'>Failed to send message.</span>";
+      });
+    });
+  });
    
   // (function() {
   //   emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key

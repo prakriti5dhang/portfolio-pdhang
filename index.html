@@ -85,7 +85,7 @@
 <!-- <img src="./image/dp/dp_resize/dp6.png" class="rounded-circle border border-1"  alt="dp" width="150" height="150"> -->
 <!-- <img src="./image/dp/dp_resize/dp81.png" class="rounded-circle border border-1"  alt="dp" width="150" height="150"> -->
 <!-- <img src="./image/dp/dp_resize/dp9.png" class="rounded-circle border border-1"  alt="dp" width="150" height="150"> -->
-<img src="./image/dp/dp_resize/dp10.png" class="rounded-circle border border-1" style="align-items: center;" alt="dp" width="150" height="150">
+<img src="./image/dp/dp10.png" class="rounded-circle border border-1" style="align-items: center;" alt="dp" width="150" height="150">
 <!-- <img src="./image/dp/dp_resize/prakriti_dp.png" class="rounded-circle border border-1"  alt="dp" width="150" height="150"> -->
                 
             </div>
@@ -648,7 +648,19 @@ Pedagogy Design, Education Technology, Qualitative and Quantitative analysis.</l
         <div class="container">
             <h2>Contact</h2>
             <hr>
-<form id="contact-form" class="p-4 border rounded shadow-sm bg-light"  action="mailto:example@email.com" 
+         <form id="contact-form" class="p-4 border rounded shadow bg-light">
+        <h4 class="text-center mb-4"></h4>
+
+        <input type="text" name="user_name" class="form-control mb-3" placeholder="Name" required>
+        <input type="email" name="user_email" class="form-control mb-3" placeholder="Email" required>
+         <input type="text" name="user_prof" class="form-control mb-3" placeholder="Profession" required>
+          <input type="text" name="user_org" class="form-control mb-3" placeholder="Organization" required>
+        <textarea name="message" class="form-control mb-3" placeholder="Message" rows="4" required></textarea>
+
+        <button type="submit" class="btn btn-primary w-100">Send</button>
+      </form>
+      <p id="status" class="text-center mt-3"></p>
+<!-- <form id="contact-form" class="p-4 border rounded shadow-sm bg-light"  action="mailto:example@email.com" 
   method="post" 
   enctype="text/plain">
         <h4 class="mb-4 text-center"></h4>
@@ -687,10 +699,10 @@ Pedagogy Design, Education Technology, Qualitative and Quantitative analysis.</l
         </div>
 
         <div class="d-grid">
-          <button type="submit" id="sendBtn" class="btn btn-info" onclick="sendMail()" > <!--onclick="sendMail()"-->
+          <button type="submit" id="sendBtn" class="btn btn-info" onclick="sendMail()" > 
             Send
-          </button>
-<script>
+          </button> -->
+<!-- <script>
 function sendMail() {
   let name = document.getElementById("name").value;
   let email = document.getElementById("email").value;
@@ -707,9 +719,9 @@ function sendMail() {
     encodeURIComponent(subject) +
     "&body=" +
     body;
-}
+} -->
 
-//           document.getElementById("sendBtn").addEventListener("click", function () {
+<!-- //           document.getElementById("sendBtn").addEventListener("click", function () {
 //   let name = "riya";
 //   let email = "dhang.prakriti@gmail.com";
 //   let message = "Hello there!";
@@ -717,14 +729,14 @@ function sendMail() {
 //   let body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`;
   
 //   // THIS WORKS because it's a direct user click
-//   window.location.href = `mailto:dhang.prakriti@gmail.com?subject=Contact&body=${body}`;
-// });
+//   window.location.href = `mailto:dhang.prakriti@gmail.com?subject=Contact&body=${body}`; 
+// }); -->
 
-</script>
+<!-- </script> -->
         </div>
-      </form>
+      <!-- </form> -->
 
-    </div>
+    <!-- </div> -->
            
         
 
@@ -749,7 +761,7 @@ function sendMail() {
                         href="https://www.linkedin.com/in/prakriti-dhang-01600913b/" class="hoverline"
                         target="_blank">linkedin.com/in/prakriti-dhang</a></a>
             </p> -->
-        </div>
+        <!-- </div> -->
     </section>
 
     <footer>
