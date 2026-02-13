@@ -91,6 +91,7 @@ header {
     display: none;
     font-size: 22px;
     cursor: pointer;
+    padding: 15px 0;
 }
 
 /* Dark toggle */
@@ -156,6 +157,8 @@ header {
     text-decoration: none;
 }
 
+
+
 .contactme:hover {
     color: #00796b;
     background-color: white;
@@ -165,11 +168,12 @@ ul li {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-#colsticky {
+/****************** left col sticky ********************************/
+/* #colsticky {
     position: sticky;
     left: 0;
     z-index: 1000;
-}
+} */
 
 /* ---------- Skills ---------- */
 
@@ -208,7 +212,7 @@ ul li {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/* MSt tools */
+/* MS tools */
 .MStools-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -452,7 +456,7 @@ footer {
 
 
 
-
+/***************  Mobile view ****************/
 
 @media(max-width:768px) {
     .nav-links {

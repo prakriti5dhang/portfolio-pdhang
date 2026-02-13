@@ -2,12 +2,23 @@
 document.addEventListener("DOMContentLoaded", function () {
   const menuBtn = document.querySelector(".menu-toggle");
   const navLinks = document.querySelector(".nav-links");
+  const links = document.querySelectorAll(".nav-links a");
 
   if (menuBtn) {
     menuBtn.addEventListener("click", function () {
       navLinks.classList.toggle("show");
     });
   }
+
+
+
+/* Close Menu When Link Clicked (Mobile) */
+  links.forEach(link => {
+    link.addEventListener("click", function () {
+      navLinks.classList.remove("show");
+    });
+  });
+
 });
 
 
