@@ -107,6 +107,7 @@ header {
     color: #fff;
     text-align: center;
     padding: 20px 20px;
+   
 }
 
 .btn {
@@ -167,6 +168,20 @@ header {
 ul li {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+#projectlistc a {
+    color: #1a1a1a;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform .3s ease, color .3s ease;
+}
+
+#projectlistc a:hover {
+    color: #110f22;
+    transform: scale(1.35);
+
+}
+
 
 /****************** left col sticky ********************************/
 /* #colsticky {
@@ -467,6 +482,7 @@ footer {
         top: 60px;
         right: 0;
         padding: 20px;
+        
     }
 
     .nav-links.show {
