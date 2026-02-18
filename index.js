@@ -84,6 +84,96 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
    
+
+
+
+/************************************************ Skills js ********************************************************/
+
+document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const skillCards = document.querySelectorAll('.skill');
+
+    console.log("Found " + filterButtons.length + " buttons and " + skillCards.length + " cards.");
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const target = button.getAttribute('data-target');
+            console.log("Filtering for: " + target);
+
+            // 1. Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // 2. Add active to clicked button
+            button.classList.add('active');
+
+            // 3. Show/Hide Cards
+            skillCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (target === 'all' || category === target) {
+                    card.style.display = 'flex'; // Or 'block'
+                    card.classList.add('show');
+                } else {
+                    card.style.display = 'none';
+                    card.classList.remove('show');
+                }
+            });
+        });
+    });
+});
+
+
+
+/********************** display project overlay content on menu button click *********************************/
+
+const menuBtn = document.getElementById('menu-trigger');
+const closeBtn = document.getElementById('close-overlay');
+const overlay = document.getElementById('project-overlay');
+
+// Open overlay
+menuBtn.addEventListener('click', () => {
+    overlay.classList.add('show-overlay');
+});
+
+// Close overlay
+closeBtn.addEventListener('click', () => {
+    overlay.style.visibility = 'hidden';
+    
+});
+
+// Optional: Close if clicking outside the content
+overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+        overlay.classList.remove('show-overlay');
+    }
+});
+
+
+
+
+
+// document.querySelectorAll('.filter-btn').forEach(button => {
+//     button.addEventListener('click', () => {
+//         // Update active button status
+//         document.querySelector('.filter-btn.active').classList.remove('active');
+//         button.classList.add('active');
+
+//         const target = button.getAttribute('data-target');
+//         const skills = document.querySelectorAll('.skill');
+
+//         skills.forEach(skill => {
+//             const category = skill.getAttribute('data-category');
+            
+//             if (target === 'all' || category === target) {
+//                 skill.classList.remove('hide');
+//                 skill.classList.add('show');
+//             } else {
+//                 skill.classList.add('hide');
+//                 skill.classList.remove('show');
+//             }
+//         });
+//     });
+// });
+
+
   // (function() {
   //   emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
   // })();
