@@ -1,0 +1,217 @@
+<section id="india-outreach">
+
+<h2>Institutional Outreach Across India</h2>
+<p>Workshops & Webinars delivered nationwide.</p>
+
+<h3>2025</h3>
+<div id="map2025" class="year-map"></div>
+
+<h3>2024</h3>
+<div id="map2024" class="year-map"></div>
+
+<h3>2023</h3>
+<div id="map2023" class="year-map"></div>
+
+<h3>2022</h3>
+<div id="map2022" class="year-map"></div>
+
+<h3>2021</h3>
+<div id="map2021" class="year-map"></div>
+
+</section>
+
+/*css*/
+.year-map{
+  height:420px;
+  width:100%;
+  margin-bottom:60px;
+  border-radius:14px;
+  box-shadow:0 4px 14px rgba(0,0,0,0.1);
+}
+
+<script>
+//Common Map Setup
+// India center
+var indiaCenter = [22.9734,78.6569];
+
+// Icons
+var webinarIcon = L.icon({
+ iconUrl:
+ "https://cdn-icons-png.flaticon.com/512/9068/9068756.png",
+ iconSize:[26,26]
+});
+
+var inpersonIcon = L.icon({
+ iconUrl:
+ "https://cdn-icons-png.flaticon.com/512/684/684908.png",
+ iconSize:[26,26]
+});
+
+</script>
+
+
+<script>
+//2025
+var map2025 = L.map('map2025')
+.setView(indiaCenter,5);
+
+L.tileLayer(
+ 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+).addTo(map2025);
+
+// Kolkata – Brainware
+L.marker([22.5726,88.3639],{icon:webinarIcon})
+.addTo(map2025)
+.bindPopup("Brainware University<br>Webinar<br>Aug 5");
+
+// Budge Budge
+L.marker([22.4700,88.1800],{icon:inpersonIcon})
+.addTo(map2025)
+.bindPopup("Budge Budge Institute of Technology<br>In-Person");
+
+// Haldia
+L.marker([22.0253,88.0583],{icon:inpersonIcon})
+.addTo(map2025)
+.bindPopup("Haldia Institute of Technology");
+
+// Hyderabad
+L.marker([17.3850,78.4867],{icon:webinarIcon})
+.addTo(map2025)
+.bindPopup("Gurunanak Institution Technical Campus");
+
+// Itanagar
+L.marker([27.0844,93.6053],{icon:webinarIcon})
+.addTo(map2025)
+.bindPopup("NERIST – Webinar");
+
+// Imphal
+L.marker([24.8170,93.9368],{icon:webinarIcon})
+.addTo(map2025)
+.bindPopup("Manipur Institute of Technology");
+
+// Chennai
+L.marker([13.0827,80.2707],{icon:webinarIcon})
+.addTo(map2025)
+.bindPopup("St. Joseph's College of Engineering");
+
+</script>
+
+<script>
+//2024
+var map2024 = L.map('map2024')
+.setView(indiaCenter,5);
+
+L.tileLayer(
+ 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+).addTo(map2024);
+
+// Odisha Cluster
+L.marker([20.2961,85.8245],{icon:inpersonIcon})
+.addTo(map2024)
+.bindPopup("GITAM University");
+
+L.marker([20.3535,85.8195],{icon:inpersonIcon})
+.addTo(map2024)
+.bindPopup("Trident Academy");
+
+L.marker([20.2732,85.8330],{icon:inpersonIcon})
+.addTo(map2024)
+.bindPopup("Einstein Academy");
+
+// Kolkata
+L.marker([22.5726,88.3639],{icon:webinarIcon})
+.addTo(map2024)
+.bindPopup("Aliah University");
+
+</script>
+
+<script>
+//2023
+var map2023 = L.map('map2023')
+.setView(indiaCenter,5);
+
+L.tileLayer(
+ 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+).addTo(map2023);
+
+// Kolkata Cluster
+L.marker([22.5726,88.3639],{icon:webinarIcon})
+.addTo(map2023)
+.bindPopup("Women's Polytechnic");
+
+// Siliguri
+L.marker([26.7271,88.3953],{icon:webinarIcon})
+.addTo(map2023)
+.bindPopup("Siliguri Polytechnic");
+
+// Bankura
+L.marker([23.2324,87.0784],{icon:inpersonIcon})
+.addTo(map2023)
+.bindPopup("Bankura Polytechnic");
+
+// Imphal
+L.marker([24.8170,93.9368],{icon:webinarIcon})
+.addTo(map2023)
+.bindPopup("IIIT Imphal");
+
+</script>
+
+<script>
+2022
+var map2022 = L.map('map2022')
+.setView(indiaCenter,5);
+
+L.tileLayer(
+ 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+).addTo(map2022);
+
+// Kalyani
+L.marker([22.9750,88.4344],{icon:inpersonIcon})
+.addTo(map2022)
+.bindPopup("Kalyani Govt Engineering College");
+
+// Silchar
+L.marker([24.8333,92.7789],{icon:webinarIcon})
+.addTo(map2022)
+.bindPopup("NIT Silchar");
+
+// Visakhapatnam
+L.marker([17.6868,83.2185],{icon:inpersonIcon})
+.addTo(map2022)
+.bindPopup("Simhadri Institute");
+
+</script>
+
+<script>
+//2021
+var map2021 = L.map('map2021')
+.setView(indiaCenter,5);
+
+L.tileLayer(
+ 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+).addTo(map2021);
+
+// Kolkata
+L.marker([22.5726,88.3639],{icon:inpersonIcon})
+.addTo(map2021)
+.bindPopup("Neotia University");
+
+// Siliguri
+L.marker([26.7271,88.3953],{icon:inpersonIcon})
+.addTo(map2021)
+.bindPopup("Siliguri Institute of Technology");
+
+// Asansol
+L.marker([23.6739,86.9524],{icon:inpersonIcon})
+.addTo(map2021)
+.bindPopup("Asansol Engineering College");
+
+</script>
+
+5 static India maps
+
+Year-wise outreach display
+
+Webinar vs In-Person icons
+
+Recruiter-friendly visualization
