@@ -47,22 +47,22 @@ function filterProjects(cat){
 
 /****** Contact ******/
 
-const scriptURL =                       
-      "https://script.google.com/macros/s/AKfycbxER5EiVF5nTYKwZ5jBgjK9a1eMjX7KX1rQW9wosuZu0Dg-X--ofaTSW96u3MyuIOOV2g/exec";
-      const form = document.forms["contact-form"];
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        var formData = new FormData(form);
+// const scriptURL =                       
+//       "https://script.google.com/macros/s/AKfycbxER5EiVF5nTYKwZ5jBgjK9a1eMjX7KX1rQW9wosuZu0Dg-X--ofaTSW96u3MyuIOOV2g/exec";
+//       const form = document.forms["contact-form"];
+//       form.addEventListener("submit", (e) => {
+//         e.preventDefault();
+//         var formData = new FormData(form);
        
 
-        fetch(scriptURL, { method: "POST", body: formData })
-          .then((response) => {
-            swal("Done", "Submitted Successfully.", "success");
-          })
-          .catch((error) => {
-            swal("Error", "Something went wrong. please try again!", "error");
-          });
-      });
+//         fetch(scriptURL, { method: "POST", body: formData })
+//           .then((response) => {
+//             swal("Done", "Submitted Successfully.", "success");
+//           })
+//           .catch((error) => {
+//             swal("Error", "Something went wrong. please try again!", "error");
+//           });
+//       });
 
 
 
